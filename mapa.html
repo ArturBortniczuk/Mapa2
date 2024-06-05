@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_60cca087dc07cd273896d15066a1ce3c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_60cca087dc07cd273896d15066a1ce3c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_60cca087dc07cd273896d15066a1ce3c = L.map(
+                "map_60cca087dc07cd273896d15066a1ce3c",
+                {
+                    center: [52.0, 20.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_be6a41db4643e233a731634e1a48b939 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_be6a41db4643e233a731634e1a48b939.addTo(map_60cca087dc07cd273896d15066a1ce3c);
+        
+    
+            var marker_7f1ce3d36cb95baf3a5ebe4974a89b1c = L.marker(
+                [53.13248859999999, 23.1688403],
+                {}
+            ).addTo(map_60cca087dc07cd273896d15066a1ce3c);
+        
+    
+            var icon_c1bb20e933f75307fa6637ad5338dc91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7f1ce3d36cb95baf3a5ebe4974a89b1c.setIcon(icon_c1bb20e933f75307fa6637ad5338dc91);
+        
+    
+        var popup_6bd1dc398468004318527fd4e8f99ebc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f7ba1b51505b56464f937436b0862bd = $(`<div id="html_6f7ba1b51505b56464f937436b0862bd" style="width: 100.0%; height: 100.0%;">BIałystok</div>`)[0];
+                popup_6bd1dc398468004318527fd4e8f99ebc.setContent(html_6f7ba1b51505b56464f937436b0862bd);
+            
+        
+
+        marker_7f1ce3d36cb95baf3a5ebe4974a89b1c.bindPopup(popup_6bd1dc398468004318527fd4e8f99ebc)
+        ;
+
+        
+    
+    
+            var marker_4837388b4bfc01db859529ac46797e67 = L.marker(
+                [52.9912947, 22.8843128],
+                {}
+            ).addTo(map_60cca087dc07cd273896d15066a1ce3c);
+        
+    
+            var icon_2ecbd3601e2b88577c3127eaca7b5a41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_4837388b4bfc01db859529ac46797e67.setIcon(icon_2ecbd3601e2b88577c3127eaca7b5a41);
+        
+    
+        var popup_edb1852c6dad0bbf2d9451b7d7622be4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80a8af44d6074e763425a226a78f72b9 = $(`<div id="html_80a8af44d6074e763425a226a78f72b9" style="width: 100.0%; height: 100.0%;">Łapy</div>`)[0];
+                popup_edb1852c6dad0bbf2d9451b7d7622be4.setContent(html_80a8af44d6074e763425a226a78f72b9);
+            
+        
+
+        marker_4837388b4bfc01db859529ac46797e67.bindPopup(popup_edb1852c6dad0bbf2d9451b7d7622be4)
+        ;
+
+        
+    
+    
+            var marker_541a00757119eb1540ebd5aac6e17bc6 = L.marker(
+                [52.9148, 22.51003],
+                {}
+            ).addTo(map_60cca087dc07cd273896d15066a1ce3c);
+        
+    
+            var icon_47c2665aae51731a30a47fdb60bc947b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_541a00757119eb1540ebd5aac6e17bc6.setIcon(icon_47c2665aae51731a30a47fdb60bc947b);
+        
+    
+        var popup_55856e36281d9ab4ec5fe35f80577db8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8072cca98159b187243ed69ae38f7ebf = $(`<div id="html_8072cca98159b187243ed69ae38f7ebf" style="width: 100.0%; height: 100.0%;">Wysokie Mazowieckie</div>`)[0];
+                popup_55856e36281d9ab4ec5fe35f80577db8.setContent(html_8072cca98159b187243ed69ae38f7ebf);
+            
+        
+
+        marker_541a00757119eb1540ebd5aac6e17bc6.bindPopup(popup_55856e36281d9ab4ec5fe35f80577db8)
+        ;
+
+        
+    
+    
+            var marker_a50d6182ce0d3e931fa700ceaecf9ed0 = L.marker(
+                [52.30343980000001, 21.1607239],
+                {}
+            ).addTo(map_60cca087dc07cd273896d15066a1ce3c);
+        
+    
+            var icon_d0a2b8018517c6c65d0293e9e9ec8635 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_a50d6182ce0d3e931fa700ceaecf9ed0.setIcon(icon_d0a2b8018517c6c65d0293e9e9ec8635);
+        
+    
+        var popup_9e9b153dc6a84619a9ad5be39f129bfa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a617e9d23cafe180206b4dd81a02337d = $(`<div id="html_a617e9d23cafe180206b4dd81a02337d" style="width: 100.0%; height: 100.0%;">Zielonka</div>`)[0];
+                popup_9e9b153dc6a84619a9ad5be39f129bfa.setContent(html_a617e9d23cafe180206b4dd81a02337d);
+            
+        
+
+        marker_a50d6182ce0d3e931fa700ceaecf9ed0.bindPopup(popup_9e9b153dc6a84619a9ad5be39f129bfa)
+        ;
+
+        
+    
+    
+            var marker_3e3e768019bfe15647c3409c5c637a1a = L.marker(
+                [52.2296756, 21.0122287],
+                {}
+            ).addTo(map_60cca087dc07cd273896d15066a1ce3c);
+        
+    
+            var icon_b55d7871636530a4309de30122d17978 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3e3e768019bfe15647c3409c5c637a1a.setIcon(icon_b55d7871636530a4309de30122d17978);
+        
+    
+        var popup_3421d318797a8634ff91b4077ed8b02c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d510b200d1dc96f2e4779466a245be85 = $(`<div id="html_d510b200d1dc96f2e4779466a245be85" style="width: 100.0%; height: 100.0%;">Warszawa</div>`)[0];
+                popup_3421d318797a8634ff91b4077ed8b02c.setContent(html_d510b200d1dc96f2e4779466a245be85);
+            
+        
+
+        marker_3e3e768019bfe15647c3409c5c637a1a.bindPopup(popup_3421d318797a8634ff91b4077ed8b02c)
+        ;
+
+        
+    
+    
+            var marker_9db479a6bc1ded949bfc785dbd89a767 = L.marker(
+                [53.4285438, 14.5528116],
+                {}
+            ).addTo(map_60cca087dc07cd273896d15066a1ce3c);
+        
+    
+            var icon_d4ee5453d2f2de280cd91309a710217c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_9db479a6bc1ded949bfc785dbd89a767.setIcon(icon_d4ee5453d2f2de280cd91309a710217c);
+        
+    
+        var popup_903424ad8f739a9e8a122b7cd41271a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d2bee20afd6151cf433666a0fd0021b = $(`<div id="html_1d2bee20afd6151cf433666a0fd0021b" style="width: 100.0%; height: 100.0%;">Szczecin</div>`)[0];
+                popup_903424ad8f739a9e8a122b7cd41271a1.setContent(html_1d2bee20afd6151cf433666a0fd0021b);
+            
+        
+
+        marker_9db479a6bc1ded949bfc785dbd89a767.bindPopup(popup_903424ad8f739a9e8a122b7cd41271a1)
+        ;
+
+        
+    
+    
+            var marker_b4faf27b02554306aff0cda87a79dacf = L.marker(
+                [50.0411867, 21.9991196],
+                {}
+            ).addTo(map_60cca087dc07cd273896d15066a1ce3c);
+        
+    
+            var icon_7aad9d966998763f81b147611da6c283 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b4faf27b02554306aff0cda87a79dacf.setIcon(icon_7aad9d966998763f81b147611da6c283);
+        
+    
+        var popup_5632be68d1e87d7b18030c5c8afd53de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20d211e33a1c7a9907d402b8b579b655 = $(`<div id="html_20d211e33a1c7a9907d402b8b579b655" style="width: 100.0%; height: 100.0%;">Rzeszów</div>`)[0];
+                popup_5632be68d1e87d7b18030c5c8afd53de.setContent(html_20d211e33a1c7a9907d402b8b579b655);
+            
+        
+
+        marker_b4faf27b02554306aff0cda87a79dacf.bindPopup(popup_5632be68d1e87d7b18030c5c8afd53de)
+        ;
+
+        
+    
+    
+            var marker_a881ec0488a8ea4479394e5152b242e1 = L.marker(
+                [51.7592924, 19.4558778],
+                {}
+            ).addTo(map_60cca087dc07cd273896d15066a1ce3c);
+        
+    
+            var icon_dbf7a57673deb78a9fadae88c3936fd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_a881ec0488a8ea4479394e5152b242e1.setIcon(icon_dbf7a57673deb78a9fadae88c3936fd8);
+        
+    
+        var popup_e7cbf7ec5cedb0b9419c4de1210d3a03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_544e6c9de71bf04c5741cf332fa39af2 = $(`<div id="html_544e6c9de71bf04c5741cf332fa39af2" style="width: 100.0%; height: 100.0%;">Łódź</div>`)[0];
+                popup_e7cbf7ec5cedb0b9419c4de1210d3a03.setContent(html_544e6c9de71bf04c5741cf332fa39af2);
+            
+        
+
+        marker_a881ec0488a8ea4479394e5152b242e1.bindPopup(popup_e7cbf7ec5cedb0b9419c4de1210d3a03)
+        ;
+
+        
+    
+    
+            var marker_ae37dcff1191332c6323e203c9840a39 = L.marker(
+                [52.844147, 19.1784128],
+                {}
+            ).addTo(map_60cca087dc07cd273896d15066a1ce3c);
+        
+    
+            var icon_b738f4f4ceb34c211e6b70da4692704d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ae37dcff1191332c6323e203c9840a39.setIcon(icon_b738f4f4ceb34c211e6b70da4692704d);
+        
+    
+        var popup_99a78e366ee818a33b6bc6448b550d54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_178571427bce4475a231b41d2460fec5 = $(`<div id="html_178571427bce4475a231b41d2460fec5" style="width: 100.0%; height: 100.0%;">Lipno</div>`)[0];
+                popup_99a78e366ee818a33b6bc6448b550d54.setContent(html_178571427bce4475a231b41d2460fec5);
+            
+        
+
+        marker_ae37dcff1191332c6323e203c9840a39.bindPopup(popup_99a78e366ee818a33b6bc6448b550d54)
+        ;
+
+        
+    
+    
+            var marker_b5d800728e956157684728f5fe650029 = L.marker(
+                [53.0137902, 18.5984437],
+                {}
+            ).addTo(map_60cca087dc07cd273896d15066a1ce3c);
+        
+    
+            var icon_24321186d69672faac10528e1c9fb19f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_b5d800728e956157684728f5fe650029.setIcon(icon_24321186d69672faac10528e1c9fb19f);
+        
+    
+        var popup_39b4ac109104023311c8608f625511ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_039b4052f85a832db3a3cceefccc9051 = $(`<div id="html_039b4052f85a832db3a3cceefccc9051" style="width: 100.0%; height: 100.0%;">Toruń</div>`)[0];
+                popup_39b4ac109104023311c8608f625511ff.setContent(html_039b4052f85a832db3a3cceefccc9051);
+            
+        
+
+        marker_b5d800728e956157684728f5fe650029.bindPopup(popup_39b4ac109104023311c8608f625511ff)
+        ;
+
+        
+    
+    
+            var marker_d0ad9030ad4a359fffa78f0718c151f8 = L.marker(
+                [53.12348040000001, 18.0084378],
+                {}
+            ).addTo(map_60cca087dc07cd273896d15066a1ce3c);
+        
+    
+            var icon_c2382e677a1958111ec1c10efb8c900b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d0ad9030ad4a359fffa78f0718c151f8.setIcon(icon_c2382e677a1958111ec1c10efb8c900b);
+        
+    
+        var popup_856485b2d7584b48c58fda9eccbace4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c415338259214efaafb2efcdee44c32a = $(`<div id="html_c415338259214efaafb2efcdee44c32a" style="width: 100.0%; height: 100.0%;">Bydgoszcz</div>`)[0];
+                popup_856485b2d7584b48c58fda9eccbace4e.setContent(html_c415338259214efaafb2efcdee44c32a);
+            
+        
+
+        marker_d0ad9030ad4a359fffa78f0718c151f8.bindPopup(popup_856485b2d7584b48c58fda9eccbace4e)
+        ;
+
+        
+    
+    
+            var marker_13e49b9656bf348e3576b460ff25baf7 = L.marker(
+                [54.35202520000001, 18.6466384],
+                {}
+            ).addTo(map_60cca087dc07cd273896d15066a1ce3c);
+        
+    
+            var icon_ae9594da72714b802449a104e08fb0b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_13e49b9656bf348e3576b460ff25baf7.setIcon(icon_ae9594da72714b802449a104e08fb0b2);
+        
+    
+        var popup_1c2402a17e7cd0ae13ea397c4ec69d66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c66aa6172fa5b88c65bb3f003bc9a5b = $(`<div id="html_6c66aa6172fa5b88c65bb3f003bc9a5b" style="width: 100.0%; height: 100.0%;">Gdańsk</div>`)[0];
+                popup_1c2402a17e7cd0ae13ea397c4ec69d66.setContent(html_6c66aa6172fa5b88c65bb3f003bc9a5b);
+            
+        
+
+        marker_13e49b9656bf348e3576b460ff25baf7.bindPopup(popup_1c2402a17e7cd0ae13ea397c4ec69d66)
+        ;
+
+        
+    
+    
+            var marker_f19a859a8e569058079bdd10da3fceee = L.marker(
+                [52.7325285, 15.2369305],
+                {}
+            ).addTo(map_60cca087dc07cd273896d15066a1ce3c);
+        
+    
+            var icon_ea68a17e7f92fb0eb7978c64a08feaa1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f19a859a8e569058079bdd10da3fceee.setIcon(icon_ea68a17e7f92fb0eb7978c64a08feaa1);
+        
+    
+        var popup_e1fbdc3883630764730673f7a1f37b0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1669df27c4db7d27c99043bf973f4964 = $(`<div id="html_1669df27c4db7d27c99043bf973f4964" style="width: 100.0%; height: 100.0%;">Gorzów Wielkopolski</div>`)[0];
+                popup_e1fbdc3883630764730673f7a1f37b0a.setContent(html_1669df27c4db7d27c99043bf973f4964);
+            
+        
+
+        marker_f19a859a8e569058079bdd10da3fceee.bindPopup(popup_e1fbdc3883630764730673f7a1f37b0a)
+        ;
+
+        
+    
+    
+            var marker_bd8f66aa7a7a2d22db1bdb379fb9c7d0 = L.marker(
+                [51.2509458, 22.5747275],
+                {}
+            ).addTo(map_60cca087dc07cd273896d15066a1ce3c);
+        
+    
+            var icon_b8faa6036228acc18657bda15f31712c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_bd8f66aa7a7a2d22db1bdb379fb9c7d0.setIcon(icon_b8faa6036228acc18657bda15f31712c);
+        
+    
+        var popup_3fdc6c4e71700191da6c3f700d62d9bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_632346037675da2013d277759373e30f = $(`<div id="html_632346037675da2013d277759373e30f" style="width: 100.0%; height: 100.0%;">Lublin</div>`)[0];
+                popup_3fdc6c4e71700191da6c3f700d62d9bd.setContent(html_632346037675da2013d277759373e30f);
+            
+        
+
+        marker_bd8f66aa7a7a2d22db1bdb379fb9c7d0.bindPopup(popup_3fdc6c4e71700191da6c3f700d62d9bd)
+        ;
+
+        
+    
+    
+            var marker_d37ba692a2452906b654bf4c70adb2a7 = L.marker(
+                [51.9356214, 15.5061862],
+                {}
+            ).addTo(map_60cca087dc07cd273896d15066a1ce3c);
+        
+    
+            var icon_c3e5e9765280fd2ee6ea2cf03805945b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d37ba692a2452906b654bf4c70adb2a7.setIcon(icon_c3e5e9765280fd2ee6ea2cf03805945b);
+        
+    
+        var popup_a8431fd15071738d7ec4c508eb1f2e75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_041ff622e9da155c3f6fa8ed9db29cbc = $(`<div id="html_041ff622e9da155c3f6fa8ed9db29cbc" style="width: 100.0%; height: 100.0%;">Zielona Góra</div>`)[0];
+                popup_a8431fd15071738d7ec4c508eb1f2e75.setContent(html_041ff622e9da155c3f6fa8ed9db29cbc);
+            
+        
+
+        marker_d37ba692a2452906b654bf4c70adb2a7.bindPopup(popup_a8431fd15071738d7ec4c508eb1f2e75)
+        ;
+
+        
+    
+    
+            var marker_84a2b731820cf1b97ed58d18cacff2f3 = L.marker(
+                [52.406374, 16.9251681],
+                {}
+            ).addTo(map_60cca087dc07cd273896d15066a1ce3c);
+        
+    
+            var icon_cf984f82702f1f22ce3f189240fca932 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_84a2b731820cf1b97ed58d18cacff2f3.setIcon(icon_cf984f82702f1f22ce3f189240fca932);
+        
+    
+        var popup_08e15b69c6bc78ec83f3c0c1f011bec0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93116ab482420b752214520656e79153 = $(`<div id="html_93116ab482420b752214520656e79153" style="width: 100.0%; height: 100.0%;">Poznań</div>`)[0];
+                popup_08e15b69c6bc78ec83f3c0c1f011bec0.setContent(html_93116ab482420b752214520656e79153);
+            
+        
+
+        marker_84a2b731820cf1b97ed58d18cacff2f3.bindPopup(popup_08e15b69c6bc78ec83f3c0c1f011bec0)
+        ;
+
+        
+    
+    
+            var marker_ed3bd2d5259d32088e98c06aa2af1cbb = L.marker(
+                [51.1078852, 17.0385376],
+                {}
+            ).addTo(map_60cca087dc07cd273896d15066a1ce3c);
+        
+    
+            var icon_70d7e8bf5c98f1b75b64668f0d783b12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ed3bd2d5259d32088e98c06aa2af1cbb.setIcon(icon_70d7e8bf5c98f1b75b64668f0d783b12);
+        
+    
+        var popup_2b93de375ddae258b251c9e8529c8a9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00fd8935d777f642980c8fda9bdf2aa9 = $(`<div id="html_00fd8935d777f642980c8fda9bdf2aa9" style="width: 100.0%; height: 100.0%;">Wrocław</div>`)[0];
+                popup_2b93de375ddae258b251c9e8529c8a9f.setContent(html_00fd8935d777f642980c8fda9bdf2aa9);
+            
+        
+
+        marker_ed3bd2d5259d32088e98c06aa2af1cbb.bindPopup(popup_2b93de375ddae258b251c9e8529c8a9f)
+        ;
+
+        
+    
+</script>
+</html>
